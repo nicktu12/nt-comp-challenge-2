@@ -1,10 +1,13 @@
 /*TABLE OF CONTENTS*/
+
+/*COLOR SCHEME*/
 /*http://paletton.com/#uid=75B0u0kjkkF9PuteVp1nsg-sQbn*/
 
 /*HTML ELEMENTS*/
 /*HEADER*/
 /*CARDS*/
 /*CARD BACKGROUND IMAGES*/
+/*HOVER STATES*/
 
 /*HTML ELEMENTS*/
 
@@ -45,6 +48,7 @@ article {
   background-color: #F3C9A8;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: background-color 0.3s;
 }
 
 h3,
@@ -80,6 +84,7 @@ h4 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  color: #679592;
 }
 
 .nav-logo {
@@ -139,6 +144,7 @@ h4 {
   background-position-x: 70%;
   background-position-y: 80%;
   opacity: .4;
+  transition: opacity 0.3s;
 }
 
 .link {
@@ -148,6 +154,7 @@ h4 {
   background-color: #C7936B;
   color: #5B2C09;
   font-size: .7em;
+  transition: background-color 0.3s;
 }
 
 .attachments {
@@ -252,4 +259,22 @@ h4 {
 
 .card-eighteen {
   background-image: url('zelda-assets/zelda-18-card.jpeg');
+}
+
+/*HOVER STATES*/
+
+article:hover .card-top {
+  opacity: 1;
+}
+
+article:hover {
+  background-color: #FFE5D1;
+}
+
+.nav li:hover {
+  color: #ca010c;
+}
+
+article:hover .link {
+  background-color: #F3C9A8;
 }
