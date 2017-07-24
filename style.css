@@ -41,7 +41,7 @@ main {
 
 article {
   width: 23vw;
-  height: 400px;
+  height: 350px;
   background-color: #F3C9A8;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -57,7 +57,13 @@ h4 {
 /*HEADER*/
 
 .user-ul {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-ul li {
+  padding: 7px;
 }
 
 .logo {
@@ -71,6 +77,22 @@ h4 {
   position: absolute;
   bottom: 0;
   left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 15px;
+}
+
+.nav-icon {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.user {
+  color: #ca010c;
 }
 
 /*CARDS*/
@@ -113,6 +135,10 @@ h4 {
 
 .card-top {
   height: 38%;
+  background-size: cover;
+  background-position-x: 70%;
+  background-position-y: 80%;
+  opacity: .4;
 }
 
 .link {
@@ -154,56 +180,76 @@ h4 {
 
 .card-one {
   background-image: url('zelda-assets/zelda-1-card.png');
-  background-size: cover;
-  background-position-x: 70%;
-  background-position-y: 80%;
-  opacity: .4;
 }
 
 .card-two {
   background-image: url('zelda-assets/zelda-2-card.png');
-  background-size: cover;
-  background-position-x: 70%;
-  background-position-y: 80%;
-  opacity: .4;
 }
 
 .card-two {
   background-image: url('zelda-assets/zelda-2-card.png');
-  background-size: cover;
-  background-position-x: 70%;
-  background-position-y: 80%;
-  opacity: .4;
 }
 
 .card-three {
   background-image: url('zelda-assets/zelda-3-card.png');
-  background-size: cover;
-  background-position-x: 70%;
-  background-position-y: 80%;
-  opacity: .4;
 }
 
 .card-four {
   background-image: url('zelda-assets/zelda-4-card.png');
-  background-size: cover;
-  background-position-x: 70%;
-  background-position-y: 80%;
-  opacity: .4;
 }
 
 .card-five {
   background-image: url('zelda-assets/zelda-5-card.jpg');
-  background-size: cover;
-  background-position-x: 70%;
-  background-position-y: 80%;
-  opacity: .4;
 }
 
 .card-six {
   background-image: url('zelda-assets/zelda-6-card.jpg');
-  background-size: cover;
-  background-position-x: 70%;
-  background-position-y: 80%;
-  opacity: .4;
+}
+
+.card-seven {
+  background-image: url('zelda-assets/zelda-7-card.png');
+}
+
+.card-eight {
+  background-image: url('zelda-assets/zelda-8-card.png');
+}
+
+.card-nine {
+  background-image: url('zelda-assets/zelda-9-card.jpg');
+}
+
+.card-ten {
+  background-image: url('zelda-assets/zelda-10-card.png');
+}
+
+.card-eleven {
+  background-image: url('zelda-assets/zelda-11-card.png');
+}
+
+.card-twelve {
+  background-image: url('zelda-assets/zelda-12-card.jpg');
+}
+
+.card-thirteen {
+  background-image: url('zelda-assets/zelda-13-card.png');
+}
+
+.card-fourteen {
+  background-image: url('zelda-assets/zelda-14-card.png');
+}
+
+.card-fifteen {
+  background-image: url('zelda-assets/zelda-15-card.jpg');
+}
+
+.card-sixteen {
+  background-image: url('zelda-assets/zelda-16-card.jpg');
+}
+
+.card-seventeen {
+  background-image: url('zelda-assets/zelda-17-card.jpg');
+}
+
+.card-eighteen {
+  background-image: url('zelda-assets/zelda-18-card.jpeg');
 }
