@@ -165,9 +165,9 @@ h4 {
 }
 
 .link {
-  margin: 10px;
+  margin: 5px;
   overflow: scroll;
-  height: 2em;
+  height: 3em;
   background-color: #C7936B;
   color: #5B2C09;
   font-size: .7em;
@@ -198,6 +198,10 @@ h4 {
   font-size: .7em;
   text-transform: uppercase;
   margin-bottom: -10px;
+}
+
+.last-card {
+  margin-bottom: 50px;
 }
 
 /*CARD BACKGROUND IMAGES*/
@@ -301,6 +305,21 @@ article:hover .views p {
 }
 
 /*MEDIA QUERIES*/
+
+@media only screen and (min-width: 1250px) {
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    margin-left: 10px;
+  }
+
+  article {
+    width: 15vw;
+  }
+}
 
 @media only screen and (max-width: 900px) {
 
