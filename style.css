@@ -84,6 +84,7 @@ h4 {
 
 .nav li {
   margin-right: 25px;
+  transition: color .3s;
 }
 
 .logo {
@@ -304,6 +305,14 @@ article:hover .views p {
   text-shadow: 0px 0px 4px #FFFF61;
 }
 
+li:hover {
+  cursor: pointer;
+}
+
+article:hover {
+  cursor: pointer;
+}
+
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width: 1250px) {
@@ -347,7 +356,7 @@ article:hover .views p {
   }
 
   article {
-    width: 47vw;
+    width: 46vw;
   }
 
   header {
@@ -386,7 +395,7 @@ article:hover .views p {
   }
 
   article {
-    width: 94vw
+    width: 93vw
   }
 
   .nav li {
