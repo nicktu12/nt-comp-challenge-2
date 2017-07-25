@@ -8,6 +8,8 @@
 /*CARDS*/
 /*CARD BACKGROUND IMAGES*/
 /*HOVER STATES*/
+/*MEDIA QUERIES*/
+
 
 /*HTML ELEMENTS*/
 
@@ -20,7 +22,7 @@
 header {
   background-color: #286561;
   position: relative;
-  height: 150px;
+  height: 165px;
 }
 
 ul {
@@ -51,6 +53,15 @@ article {
   transition: background-color 0.3s;
 }
 
+h2 {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 10px;
+  color: #822328;
+}
+
+
 h3,
 h4 {
   font-family: 'Lato', sans-serif;
@@ -64,23 +75,28 @@ h4 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 10px;
 }
 
 .user-ul li {
-  padding: 7px;
+  padding: 10px;
+}
+
+.nav li {
+  margin-right: 25px;
 }
 
 .logo {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
   height: 100px;
 }
 
 .nav {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 10px;
+  left: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -94,6 +110,7 @@ h4 {
 .nav-icon {
   height: 50px;
   vertical-align: middle;
+  margin-right: -13px;
 }
 
 .user {
@@ -277,4 +294,95 @@ article:hover {
 
 article:hover .link {
   background-color: #F3C9A8;
+}
+
+article:hover .views p {
+  text-shadow: 0px 0px 4px #FFFF61;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 900px) {
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    margin-left: 10px;
+  }
+
+  article {
+    width: 31vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    margin-left: 10px;
+  }
+
+  article {
+    width: 47vw;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+  }
+
+
+  .user-ul {
+    display: initial;
+  }
+
+  .logo {
+    position: initial;
+    width: 335px;
+    height: initial;
+    margin: 4px;
+  }
+
+  .nav {
+    display: initial;
+    position: initial;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    margin-left: 10px;
+  }
+
+  article {
+    width: 94vw
+  }
+
+  .nav li {
+    margin: 0;
+  }
+
+  .nav-icon {
+    height: 35px;
+    vertical-align: middle;
+    margin-right: -8px;
+  }
+
+  .logo {
+    width: 295px;
+    margin: 20px;
+  }
+
 }
